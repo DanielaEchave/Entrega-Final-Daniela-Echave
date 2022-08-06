@@ -1,0 +1,57 @@
+//Variables
+$colorFondo: #EEEEEE;
+$colorPrincipal: #30e3ca;
+$color1: #4A00FF;
+$color2: #01e37f;
+$color3: #9be010;
+$color4: #3B58FF;
+$color-font: #464646;
+$color-font2: #5E5E5E;
+$borderBox: 2px solid #AAAAAA;
+$mobile: 576px;
+$desktop: 1200px;
+$font-family: 'Advent Pro', sans-serif;
+$font-family-bold:'Advent Pro bold', sans-serif; 
+$font-family1: 'Antonio', sans-serif;
+$size-font: 16px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import 'navbar';
+@import 'logosCategorias';
+@import 'collage';
+@import 'mediaQuerie';
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;600;700&family=Antonio:wght@100;200&display=swap');
+
+footer{
+    background-color: $colorFondo;
+}
+
+
+// formulario
+.formulario {
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  47px 47px 91px #acacac,
+                -47px -47px 91px #ffffff;
+
+}
+h1, #categorias div div h4 {
+    text-shadow: 5px 5px 10px black;    
+}
+.dire{
+    background-color: $colorPrincipal;
+}
+
+//maps 
+$paleta-colores: (
+    fondo: #EEEEEE,
+);
+@each $nombre, $valor in $paleta-colores {
+    .color-#{$nombre} {
+        background-color: $valor;
+    }
+}

@@ -1,0 +1,68 @@
+//Variables
+$colorFondo: #F5F5F5;
+$colorPrincipal: #30E3CA;
+/* #ff3f40
+#01e37f
+#9be010 */
+$colorSecundario: #F5F5F5;
+$colorExtra: #AAAAAA;
+$borderBox: 2px solid #AAAAAA;
+$mobile: 576px;
+$desktop: 1200px;
+$font-family: 'Antonio', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import 'navbar';
+@import 'collage';
+@import 'logosCategorias';
+@import 'mediaQuerie';
+
+// formulario
+.formulario {
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  47px 47px 91px #acacac,
+                -47px -47px 91px #ffffff;
+}
+//button prg-frec
+button.boton.accordion-button{
+    background-color: $colorExtra;
+    color: black;
+}
+
+
+/* maps 
+$paleta-colores: (
+    primario: #30E3CA,
+    secundario: #2F89FC,
+    terciario: #F5F5F5,
+);
+@each $nombre, $valor in $paleta-colores {
+    .fondo-#{$nombre} {
+        background-color: $valor;
+    }
+}
+//map-get
+#categorias {
+    background-color: map-get($paleta-colores, terciario);
+}
+//mixing
+@mixin flex-row-center{}
+
+//extend
+.nosotros {
+    background-color: $colorSecundario;
+    color: black;
+    font-family: sans-serif;
+}
+.nosotros--titulo {
+    font-size: 30px;
+}
+.nosotros--parrafo {
+    font-size: 15px;
+}
+
+*/

@@ -1,0 +1,40 @@
+@media (max-width: $mobile) {
+    .logoTodoExplosion img {
+        width: auto;
+        height: 100px;
+    }
+    .navbar .container-fluid{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-item img {
+        height: 500px;
+    }
+    .button{
+        display: none;
+        margin: 0;
+    }
+    #logomarca{
+        width: 300px;
+        height: auto;
+    }
+    #collage-desktop {
+        display: none;
+    }
+    #categorias {
+        .text-size {
+            font-size: 15px;
+        }
+    }
+
+}
+@media (min-width: 567px) {
+    .collage-mobile {
+        display: none;
+    }
+    #categorias {
+        .text-size {
+            font-size: 25px;
+        }
+    }
+}

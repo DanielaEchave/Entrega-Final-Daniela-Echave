@@ -1,0 +1,206 @@
+/* #ff3f40
+#01e37f
+#9be010 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.encabezado {
+  background-color: #30E3CA;
+}
+.encabezado div a img {
+  background-color: #30E3CA;
+}
+.encabezado li a:hover {
+  color: white;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #30E3CA;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+div#collage {
+  text-align: justify;
+}
+div#collage img {
+  background: #F5F5F5;
+  transition: background ease-in 0.3s;
+  transition: transform 0.2s;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+div#collage img:hover {
+  filter: brightness(1.5);
+  transform: scale(0.98);
+}
+
+.lightbox-gallery {
+  background-image: linear-gradient(#4A148C, #E53935);
+  background-repeat: no-repeat;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.lightbox-gallery p {
+  color: #fff;
+}
+
+.lightbox-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+.lightbox-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.lightbox-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.lightbox-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.lightbox-gallery .item {
+  padding-bottom: 30px;
+}
+
+#categorias {
+  background-color: #F5F5F5;
+}
+#categorias .text-center {
+  background-color: #F5F5F5;
+  color: black;
+  font-family: sans-serif;
+}
+
+@media (max-width: 576px) {
+  .logoTodoExplosion img {
+    width: auto;
+    height: 100px;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
+  .buscador .button {
+    display: none;
+    margin: 0;
+  }
+  #logomarca {
+    width: 300px;
+    height: auto;
+  }
+  #collage-desktop {
+    display: none;
+  }
+  #categorias .text-size {
+    font-size: 15px;
+  }
+}
+@media (min-width: 567px) {
+  .collage-mobile {
+    display: none;
+  }
+  #categorias .text-size {
+    font-size: 25px;
+  }
+}
+.formulario {
+  border-radius: 11px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 47px 47px 91px #acacac, -47px -47px 91px #ffffff;
+}
+
+button.boton.accordion-button {
+  background-color: #AAAAAA;
+  color: black;
+}
+
+/* maps */
+.fondo-primario {
+  background-color: #30E3CA;
+}
+
+.fondo-secundario {
+  background-color: #2F89FC;
+}
+
+.fondo-terciario {
+  background-color: #F5F5F5;
+}
+
+#categorias {
+  background-color: #F5F5F5;
+}
+
+.nosotros {
+  color: black;
+  font-family: sans-serif;
+}
+
+.nosotros--titulo {
+  font-size: 30px;
+}
+
+.nosotros--parrafo {
+  font-size: 15px;
+}/*# sourceMappingURL=main.css.map */

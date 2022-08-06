@@ -1,0 +1,11 @@
+#categorias {
+    background-color: $colorFondo;
+    .text-center {
+        background-color: $colorFondo;
+        color: $color-font2;
+        font-family: sans-serif;
+        &:hover {
+            color: $color-font;
+        }
+    }
+}
